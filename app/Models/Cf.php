@@ -50,7 +50,7 @@ class Cf extends Model
 
     public function penyakit()
     {
-        return $this->belongsTo('App\Models\penyakit','id_penyakit');
+        return $this->belongsTo('App\Models\Penyakit','id_penyakit');
     }
 
     public function gejala()
