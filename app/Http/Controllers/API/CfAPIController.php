@@ -48,7 +48,7 @@ class CfAPIController extends AppBaseController
         $cfs;
         foreach ($data as $key => $value) {
         }
-        $cfs = Cf::with('penyakit')->whereIn('id_gejala',$data)->get();
+        $cfs = Cf::with('penyakit','gejala')->whereIn('id_gejala',$data)->get();
 
         return $this->sendResponse($cfs->toArray(), 'Cfs retrieved successfully');
     }

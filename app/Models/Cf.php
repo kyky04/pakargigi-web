@@ -53,5 +53,10 @@ class Cf extends Model
         return $this->belongsTo('App\Models\penyakit','id_penyakit');
     }
 
+    public function gejala()
+    {
+        return $this->belongsTo('App\Models\Gejala','id_gejala');
+    }
+
     
 }

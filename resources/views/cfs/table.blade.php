@@ -8,8 +8,8 @@
     <tbody>
     @foreach($cfs as $cf)
         <tr>
-            <td>{!! $cf->id_penyakit !!}</td>
-            <td>{!! $cf->id_gejala !!}</td>
+            <td>{!! $cf->penyakit->penyakit !!}</td>
+            <td>{!! $cf->gejala->gejala !!}</td>
             <td>{!! $cf->cf !!}</td>
             <td>
                 {!! Form::open(['route' => ['cfs.destroy', $cf->id], 'method' => 'delete']) !!}

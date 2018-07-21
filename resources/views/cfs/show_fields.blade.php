@@ -1,19 +1,20 @@
 <!-- Id Field -->
-<div class="form-group">
+{{-- <div class="form-group">
     {!! Form::label('id', 'Id:') !!}
     <p>{!! $cf->id !!}</p>
-</div>
+</div> --}}
 
 <!-- Id Penyakit Field -->
 <div class="form-group">
     {!! Form::label('id_penyakit', 'Id Penyakit:') !!}
-    <p>{!! $cf->id_penyakit !!}</p>
+    <p>{!! $cf->penyakit->penyakit !!}</p>
 </div>
+
 
 <!-- Id Gejala Field -->
 <div class="form-group">
     {!! Form::label('id_gejala', 'Id Gejala:') !!}
-    <p>{!! $cf->id_gejala !!}</p>
+    <p>{!! $cf->gejala->gejala !!}</p>
 </div>
 
 <!-- Cf Field -->
@@ -22,7 +23,7 @@
     <p>{!! $cf->cf !!}</p>
 </div>
 
-<!-- Created At Field -->
+{{-- <!-- Created At Field -->
 <div class="form-group">
     {!! Form::label('created_at', 'Created At:') !!}
     <p>{!! $cf->created_at !!}</p>
@@ -32,5 +33,5 @@
 <div class="form-group">
     {!! Form::label('updated_at', 'Updated At:') !!}
     <p>{!! $cf->updated_at !!}</p>
-</div>
+</div> --}}
 

@@ -45,5 +45,9 @@ class Penyakit extends Model
         'keterangan' => 'required'
     ];
 
+    public function gejala()
+    {
+        return $this->hasMany('App\Models\Gejala','id');
+    }
     
 }

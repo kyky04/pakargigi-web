@@ -1,9 +1,9 @@
 <!-- Id Field -->
-<div class="form-group">
+{{-- <div class="form-group">
     {!! Form::label('id', 'Id:') !!}
     <p>{!! $gejala->id !!}</p>
 </div>
-
+ --}}
 <!-- Gejala Field -->
 <div class="form-group">
     {!! Form::label('gejala', 'Gejala:') !!}
@@ -21,7 +21,7 @@
     {!! Form::label('mb', 'Mb:') !!}
     <p>{!! $gejala->mb !!}</p>
 </div>
-
+{{-- 
 <!-- Created At Field -->
 <div class="form-group">
     {!! Form::label('created_at', 'Created At:') !!}
@@ -33,4 +33,4 @@
     {!! Form::label('updated_at', 'Updated At:') !!}
     <p>{!! $gejala->updated_at !!}</p>
 </div>
-
+ --}}

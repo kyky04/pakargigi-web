@@ -36,7 +36,7 @@ class PenyakitAPIController extends AppBaseController
      */
     public function index(Request $request)
     {
-        $penyakits = Penyakit::all();
+        $penyakits = Penyakit::with('gejala')->get();
 
         return $this->sendResponse($penyakits->toArray(), 'Penyakits retrieved successfully');
     }
